@@ -25,9 +25,9 @@ L'obiettivo principale di questo esercizio era:
 
 ## 💻 Tecnologie utilizzate
 
-- **Laravel** (versione X.X)
-- **PHP** (versione X.X)
-- **Bootstrap** (versione X.X)
+- **Laravel**
+- **PHP** 
+- **Bootstrap** 
 - **Git/GitHub** per il versionamento
 - **HTML/CSS** per la pagina web
 
