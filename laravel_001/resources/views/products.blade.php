@@ -34,7 +34,7 @@
                             <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/prodotti">Prodotti</a>
+                            <a class="nav-link" href="/products">Prodotti</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/contatti">Contatti</a>
@@ -47,18 +47,20 @@
                 </div>
             </div>
         </nav>
-        <div class="container-fluid d-flex justify-content-center align-items-center  text-center">
-            <div class=" card" style="width: 18rem;">
-                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3MwczRhcnBnNDRmeWt3Mnd6Ymd6cWNqdXN6dWkzbGthcDNjajhuZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/HbaIqxs0FD4Ldb5Mtl/giphy.gif"
-                    class="card-img-top" alt="Scheda Grafica RTX 3090">
-                <div class="card-body">
-                    <h5 class="card-title">Nvidia - RTX 3090</h5>
-                    <h6 class="card-title">Prezzo € 1.393,12</h6>
-                    <p class="card-text">La NVIDIA RTX 3090 è una scheda grafica potente, ideale per gaming e lavori
-                        intensivi, con 24 GB di VRAM e supporto al ray tracing.</p>
-                    <a href="#" class="btn btn-success">Aggiungi al Carrello</a>
+        <div class="container-fluid d-flex justify-content-center align-items-center text-center">
+            @foreach ($products as $product)
+                <div class="card p-10" style="width: 18rem;">
+                    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTlxM3VtdXB6N2dwMDNrZWR5djJyeGduaHpxeHJ2ODdhaXM1ZDU4NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/BzSL7DiPSY5ieqRfYl/giphy.gif"
+                        class="card-img-top" alt="Scheda Grafica RTX X">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ $product }}</h5>
+                        <p class="card-text">{{ $product }} è una scheda grafica potente, ideale per gaming e
+                            lavori
+                            intensivi.</p>
+                        <a href="/products/{{ $product }}" class="btn btn-success">Descrizione</a>
+                    </div>
                 </div>
-            </div>
+            @endforeach
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
