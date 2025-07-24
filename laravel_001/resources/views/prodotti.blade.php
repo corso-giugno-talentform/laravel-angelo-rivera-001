@@ -2,7 +2,7 @@
 <html lang="it">
 
 <head>
-    <title>HomePage</title>
+    <title>Prodotti</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="https://img.icons8.com/?size=100&id=6oFZ7BIVGUGH&format=png&color=000000" type="image/gif"
@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="../src/style.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg bg-body-tertiary mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="../index.html">
                     <img src="https://img.icons8.com/?size=100&id=6oFZ7BIVGUGH&format=png&color=000000" alt="Logo"
                         width="30" height="30" class="d-inline-block align-text-top">
                     CompTech
@@ -47,29 +47,19 @@
                 </div>
             </div>
         </nav>
-        <div class="jumbotron d-grid gap-3 text-center">
-            <h1>CompTech</h1>
-            <p><em>Il tuo hardware, senza svuotare il portafoglio.</em></p>
-        </div>
-        <div>
-            <h4>Descrizione dei vari componenti in un PC.</h4>
-        </div>
-        <section class="row gap-3 mt-5 mb-3">
-            <div class="col-md-4 gap-3"> <img
-                    src="https://img.icons8.com/?size=100&id=G02MS1OblWEZ&format=png&color=000000" alt="Logo"
-                    width="30" height="30" class="d-inline-block align-text-top">
-                <p>Una scheda video è un componente del computer che elabora e visualizza le immagini sullo schermo,
-                    principalmente utilizzata per giochi, grafica e video.</p> <img
-                    src="https://img.icons8.com/?size=100&id=13105&format=png&color=000000" alt="Logo"
-                    width="30" height="30" class="d-inline-block align-text-top">
-                <p>Il processore (CPU) è il cervello del computer, che esegue i calcoli e gestisce le istruzioni per far
-                    funzionare il sistema.</p><img
-                    src="https://img.icons8.com/?size=100&id=tQou6TnHcjDS&format=png&color=000000" alt="Logo"
-                    width="30" height="30" class="d-inline-block align-text-top">
-                <p>La scheda madre è la principale componente del computer che collega e permette la comunicazione tra
-                    tutti gli altri pezzi, come CPU, RAM e schede di espansione.</p>
+        <div class="container-fluid d-flex justify-content-center align-items-center  text-center">
+            <div class=" card" style="width: 18rem;">
+                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3MwczRhcnBnNDRmeWt3Mnd6Ymd6cWNqdXN6dWkzbGthcDNjajhuZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/HbaIqxs0FD4Ldb5Mtl/giphy.gif"
+                    class="card-img-top" alt="Scheda Grafica RTX 3090">
+                <div class="card-body">
+                    <h5 class="card-title">Nvidia - RTX 3090</h5>
+                    <h6 class="card-title">Prezzo € 1.393,12</h6>
+                    <p class="card-text">La NVIDIA RTX 3090 è una scheda grafica potente, ideale per gaming e lavori
+                        intensivi, con 24 GB di VRAM e supporto al ray tracing.</p>
+                    <a href="#" class="btn btn-success">Aggiungi al Carrello</a>
+                </div>
             </div>
-        </section>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
