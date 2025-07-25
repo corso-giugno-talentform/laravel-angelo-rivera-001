@@ -16,7 +16,6 @@
 
 <body>
     <div class="container-fluid">
-        <x-navbar></x-navbar>
         <div class="jumbotron d-grid gap-3 text-center">
             <h1>CompTech</h1>
             <p><em>Il tuo hardware, senza svuotare il portafoglio.</em></p>
